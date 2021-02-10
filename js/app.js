@@ -1,7 +1,7 @@
 'use strict';
 let score = 0;
-let mony = prompt('Do I have 3 million dollars').toLowerCase();
-
+let mony = prompt('Do I have 3 million dollars');
+function dollars (){
 switch (mony) {
   case 'YES':
     alert('of course not,I am broke');
@@ -9,12 +9,13 @@ switch (mony) {
   case 'No':
     console.log('correct answer');
     score++;
-
     alert('You are smart');
     break;
 }
+}
+dollars( );
 let place = prompt('Am I live in the space?').toLowerCase();
-
+function living(){
 switch (place) {
   case 'YES':
     alert('no way');
@@ -27,7 +28,10 @@ switch (place) {
 
     break;
 }
+}
+living ();
 let sponge = prompt('Am I a yellow sponge and live in the sea?').toLowerCase();
+function yellowspong(){
 
 switch (sponge) {
   case 'YES':
@@ -41,8 +45,11 @@ switch (sponge) {
 
     break;
 }
-let gender = prompt('Am I a boy?').toLowerCase();
+}
+yellowspong();
 
+let gender = prompt('Am I a boy?').toLowerCase();
+function boygirl(){
 switch (gender) {
   case 'YES':
     alert('You are crazy ');
@@ -55,8 +62,10 @@ switch (gender) {
 
     break;
 }
+}
+boygirl();
 let points = prompt('Do I deserve 10 points?').toLowerCase();
-
+function winner(){
 switch (points) {
   case 'YES':
     alert('Thank you  ');
@@ -69,9 +78,12 @@ switch (points) {
     alert('You are kidding with me!!!');
     break;
 }
+}
+winner();
 
 let attempts = 4;
 let brothers = prompt('How many brothers do i have?');
+function family(){
 while (attempts){
     if (brothers === '3') {
       alert('that\'s correct');
@@ -89,14 +101,15 @@ while (attempts){
     attempts--;
     brothers = prompt('Please try again you have'+attempts+'remaining');
 }
-
+}
+family();
 
    
 
 const color = ['red', 'blue', 'black', 'green'];
 let chancess = 6;
-let userGuess = prompt('What\'s my favourit color?').toLowerCase()
-
+let userGuess = prompt('What\'s my favourite color?').toLowerCase()
+function favcolor(){
 while (chancess) {
     let correct=false;
   for (let i = 0; i < color.length; i++) {
@@ -118,7 +131,7 @@ while (chancess) {
     
     
 }
+}
+favcolor();
 console.log(score);
 confirm(' Thanks for playing . Your score is ' + score +'/7');
-
-
