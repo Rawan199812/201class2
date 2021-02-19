@@ -1,82 +1,82 @@
 'use strict';
 let score = 0;
-let mony = prompt('Do I have 3 million dollars');
+let mony = prompt('Do I have 3 million dollars'.toLowerCase());
 function dollars (){
-switch (mony) {
-  case 'YES':
+if (mony='Y'||'YES'){
     alert('of course not,I am broke');
-    break;
-  case 'No':
+    console.log('YES');
+   
+  }else if (mony='NO'||'N'){
     console.log('correct answer');
     score++;
     alert('You are smart');
-    break;
+    
+  }
 }
-}
+
 dollars( );
-let place = prompt('Am I live in the space?').toLowerCase();
+let place = prompt('Am I live in the space?'.toLowerCase());
 function living(){
-switch (place) {
-  case 'YES':
+if (place= 'YES'||'Y'){
+
     alert('no way');
-    break;
-  case 'No':
+    
+  }else if (place='No'||'N'){
     alert("that's correct");
     score++;
 
     console.log('correct answer');
 
-    break;
+    
 }
 }
 living ();
-let sponge = prompt('Am I a yellow sponge and live in the sea?').toLowerCase();
+let sponge = prompt('Am I a yellow sponge and live in the sea?'.toLowerCase());
 function yellowspong(){
 
-switch (sponge) {
-  case 'YES':
+if (sponge='YES'||'Y'){
     alert("no that's SpongeBob ");
-    break;
-  case 'No':
+    
+  }else if(sponge='No'||'N'){
     alert('You are genius');
     score++;
 
     console.log('correct answer');
 
-    break;
+   
 }
 }
 yellowspong();
 
-let gender = prompt('Am I a boy?').toLowerCase();
+let gender = prompt('Am I a boy?'.toLowerCase());
 function boygirl(){
-switch (gender) {
-  case 'YES':
+if (gender='YES'||'Y') {
+  
     alert('You are crazy ');
-    break;
-  case 'No':
+    
+}else if(gender='NO'||'N') {
     alert('of course');
     score++;
 
     console.log('correct answer');
 
-    break;
+   
 }
 }
 boygirl();
-let points = prompt('Do I deserve 10 points?').toLowerCase();
+let points = prompt('Do I deserve 10 points?'.toLowerCase());
 function winner(){
-switch (points) {
-  case 'YES':
+if (points='YES'||'Y') {
+  
     alert('Thank you  ');
     score++;
 
     console.log('correct answer');
 
-    break;
-  case 'No':
+    
+}else if ('NO'||'n'){
     alert('You are kidding with me!!!');
-    break;
+    
 }
 }
 winner();

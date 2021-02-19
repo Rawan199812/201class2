@@ -22,15 +22,20 @@ h1{
 #floated-imgs img {display: block; }
   
 p{
+    clear: both;
     font-size: x-large;
+    line-height: 1.2;
 
 
     
 }
 h3{
+    clear: both;
     font-size: 30px;
     color: #9c2885;
-
+    position: sticky;
+    top: 10;
+    bottom: 10;
 
    
 
@@ -40,5 +45,6 @@ h2{
     color: #9c2885;  
 }
 li{
-    font-size: 20px;  
+    font-size: 20px; 
+    line-height: 3;
 }
